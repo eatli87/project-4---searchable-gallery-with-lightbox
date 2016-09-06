@@ -1,0 +1,112 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+header {
+	height: 6em;
+	width: 100%;
+	text-align: center;
+}
+
+header input {
+	width: 460px; 
+	height: 3em;
+	margin-top: 2em;
+	padding-left: .5em;
+	border-radius: 3px;
+	border: 2px solid rgba(160,160,160,.5);
+	opacity: .7;
+}
+
+.list {
+	width: 980px;
+	margin: 1em auto 0;
+	padding: 0;
+	text-align: center;
+}
+
+.list li h3,
+.list li p {
+	display: none;
+}
+
+.list li {
+	float: left;
+	width: 200px;
+	text-align: center;
+	padding: 0;
+	margin-bottom: 60px;
+	margin-right: 60px;
+}
+
+.list li:nth-child(4n) {
+	margin-right: 0;
+}
+
+.list img {
+	width: 200px;
+	border-radius: 3px;
+}
+
+
+#overlay {
+  background:rgba(0,0,0,0.75);
+  width:100%;
+  height:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center;
+}
+
+#overlay img {
+	margin-top: 10%; 
+	width: 800px;
+}
+
+#overlay h3 {
+	color: white;
+	font-size: 1.1em;
+}
+
+#overlay p {
+	color:white;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+#leftArrow {
+	background: url('../img/bg-slider-arrows-left.png') no-repeat;
+	background-size: contain;
+	float: left;
+	height: 35px;
+	width: 35px;
+	margin: 30% 0 0 5%;
+}
+
+#rightArrow {
+	background: url('../img/bg-slider-arrows-right.png') no-repeat;
+	background-size: contain;
+	float: right;
+	height: 35px;
+	width: 35px;
+	margin: 30% 5% 0 0;
+}
+
+#closeLightbox{
+	background: url('../img/lightbox-close.png') no-repeat;
+	background-size: contain;
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin: 30px 30px 0 0;
+}
+
+/* clearfix */
+.cf::after {
+	content: "";
+	display: table;
+	clear: both;		
+}

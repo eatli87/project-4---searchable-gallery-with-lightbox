@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<title>Interactive Gallery</title>
+		<link rel="stylesheet" href="css/normalize.css">																					
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/styles.css">		
+	</head>
+	
+	<body>
+		
+		<div id="gallery">
+			
+			<header>
+				<input class="search" placeholder="Search">
+			</header>
+					
+			<ul id="imageGallery" class="list cf">
+				
+				<li>
+					<a href="img/01.jpg"><img class="thumbnail" src="img/Thumbnails/01.jpg" alt="Hay Bales"></a>
+					<h3 class="title">Hay Bales</h3>
+					<p class="caption">I love hay bales. Took this snap on a drive through the countryside past some straw fields.</p>
+				</li>
+				<li>
+					<a href="img/02.jpg"><img class="thumbnail" src="img/Thumbnails/02.jpg" alt="Lake"></a>
+					<h3 class="title">Lake</h3>
+					<p class="caption">The lake was so calm today. We had a great view of the snow on the mountains from here.</p>
+				</li>
+				<li>
+					<a href="img/03.jpg"><img class="thumbnail" src="img/Thumbnails/03.jpg" alt="Canyon"></a>
+					<h3 class="title">Canyon</h3>
+					<p class="caption">I hiked to the top of the mountain and got this picture of the canyon and trees below.</p>
+				</li>
+				<li>
+					<a href="img/04.jpg"><img class="thumbnail" src="img/Thumbnails/04.jpg" alt="Iceberg"></a>
+					<h3 class="title">Iceberg</h3>
+					<p class="caption">It was amazing to see an iceberg up close, it was so cold but didn’t snow today.</p>
+				</li>
+				<li>
+					<a href="img/05.jpg"><img class="thumbnail" src="img/Thumbnails/05.jpg" alt="Desert"></a>
+					<h3 class="title">Desert</h3>
+					<p class="caption">The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.</p>
+				</li>
+				<li>
+					<a href="img/06.jpg"><img class="thumbnail" src="img/Thumbnails/06.jpg" alt="Fall"></a>
+					<h3 class="title">Fall</h3>
+					<p class="caption">Fall is coming, I love when the leaves on the trees start to change color.</p>
+				</li>
+				<li>
+					<a href="img/07.jpg"><img class="thumbnail" src="img/Thumbnails/07.jpg" alt="Plantation"></a>
+					<h3 class="title">Plantation</h3>
+					<p class="caption">I drove past this plantation yesterday, everything is so green!</p>
+				</li>
+				<li>
+					<a href="img/08.jpg"><img class="thumbnail" src="img/Thumbnails/08.jpg" alt="Dunes"></a>
+					<h3 class="title">Dunes</h3>
+					<p class="caption">My summer vacation to the Oregon Coast. I love the sandy dunes!</p>
+				</li>
+				<li>
+					<a href="img/09.jpg"><img class="thumbnail" src="img/Thumbnails/09.jpg" alt="Countryside Lane"></a>
+					<h3 class="title">Countryside Lane</h3>
+					<p class="caption">We enjoyed a quiet stroll down this countryside lane. </p>
+				</li>
+				<li>
+					<a href="img/10.jpg"><img class="thumbnail" src="img/Thumbnails/10.jpg" alt="Sunset"></a>
+					<h3 class="title">Sunset</h3>
+					<p class="caption">Sunset at the coast! The sky turned a lovely shade of orange.</p>
+				</li>
+				<li>
+					<a href="img/11.jpg"><img class="thumbnail" src="img/Thumbnails/11.jpg" alt="Cave"></a>
+					<h3 class="title">Cave</h3>
+					<p class="caption">I did a tour of a cave today and the view of the landscape below was breathtaking.</p>
+				</li>
+				<li>
+					<a href="img/12.jpg"><img class="thumbnail" src="img/Thumbnails/12.jpg" alt="Bluebells"></a>
+					<h3 class="title">Bluebells</h3>
+					<p class="caption">I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</p>
+				</li>
+			
+			</ul>
+		</div>
+				
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/list.min.js"></script>
+		<script src="js/lightbox.js"></script>
+		
+		
+		<!-- options for list.js -->
+		<script>
+			var options = {
+  			valueNames: [ 'title', 'caption' ]
+			};
+
+			var imageList = new List('gallery', options);
+		</script>
+		
+	</body>
+</html>
