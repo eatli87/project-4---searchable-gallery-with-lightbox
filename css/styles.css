@@ -57,22 +57,24 @@ header input {
   position: fixed;
   top:0;
   left:0;
-  display:none;
+  display: none;
   text-align:center;
 }
 
 #overlay img {
-	margin-top: 10%; 
-	width: 800px;
+    width: 80%;
+	max-width: 800px;
+    text-align: center;
 }
 
 #overlay h3 {
 	color: white;
 	font-size: 1.1em;
+    margin-top: 0;
 }
 
 #overlay p {
-	color:white;
+	color: white;
 	max-width: 600px;
 	margin: 0 auto;
 }
@@ -80,10 +82,11 @@ header input {
 #leftArrow {
 	background: url('../img/bg-slider-arrows-left.png') no-repeat;
 	background-size: contain;
-	float: left;
-	height: 35px;
-	width: 35px;
-	margin: 30% 0 0 5%;
+    float: left;
+    height: 35px;
+    width: 35px;
+    margin: 30% 0 0 0%;
+    padding: 0;
 }
 
 #rightArrow {
@@ -92,16 +95,16 @@ header input {
 	float: right;
 	height: 35px;
 	width: 35px;
-	margin: 30% 5% 0 0;
+	margin: 30% 0% 0 0;
 }
 
 #closeLightbox{
 	background: url('../img/lightbox-close.png') no-repeat;
 	background-size: contain;
 	float: right;
-	width: 30px;
-	height: 30px;
-	margin: 30px 30px 0 0;
+	width: 25px;
+	height: 25px;
+	margin: 10px 10px 0 0;
 }
 
 /* clearfix */

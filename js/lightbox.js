@@ -10,17 +10,20 @@ var $rightArrow = $("<div id='rightArrow'></div>");
 var $closeLightbox = $("<div id='closeLightbox'></div><div style='clear:both'></div>");
 
 $overlay.append($closeLightbox);
-$overlay.append($leftArrow);
-$overlay.append($rightArrow);
 
 //An image to overlay
 $overlay.append($image);
+
+$overlay.append($leftArrow);
+$overlay.append($rightArrow);
 
 //A title to overlay
 $overlay.append($captionTitle);
 
 //A caption to overlay
 $overlay.append($caption);
+
+
 
 //Add overlay
 $("body").append($overlay);
